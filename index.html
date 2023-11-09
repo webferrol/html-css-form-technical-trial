@@ -13,12 +13,12 @@
       <img class="logo" src="/images/logo.jpg" width="150" height="150" alt="Super formulario">
     </header>
     <form class="main-content">
-      <section class="card" role="group" aria-label="Personales">
+      <section class="card" role="group" aria-labelledby="datos-personales">
         <header>
-          <h2 class="title">Datos personales</h2>
+          <h2 id="datos-personales" class="title">Datos personales</h2>
           <p id="asterisco" class="asterisco">Los campos con asterisco (*) son obligatorios</p>
         </header>
-        <ul class="fields">
+        <ul class="fields" aria-label="Campos">
           <li>
             <label for="name">Nombre <span class="asterisco">*</span></label>
             <input autocomplete="on" autofocus id="name" name="name" type="text" required placeholder="p.e. Pepito" aria-describedby="asterisco">
@@ -64,11 +64,11 @@
           </li>
         </ul>
       </section>
-      <section class="card" role="group" aria-label="Cuenta">
+      <section class="card" role="group" aria-labelledby="datos-cuenta">
         <header>
-          <h2 class="title">Datos de la cuenta</h2>
+          <h2 id="datos-cuenta" class="title">Datos de la cuenta</h2>
         </header>
-        <ul class="fields">
+        <ul class="fields" aria-label="Campos">
           <li>
             <label for="email">Correo electrónico</label>
             <input autocomplete="email" id="email" name="email" type="email" placeholder="p.e. info@webferrol.com">
@@ -85,9 +85,9 @@
           </li>
         </ul>
       </section>
-      <section class="card" role="group" aria-label="otros">
-        <h2 class="title">Otros datos</h2>
-        <ul class="fields">
+      <section class="card" role="group" aria-labelledby="otros-datos">
+        <h2 id="otros-datos" class="title">Otros datos</h2>
+        <ul class="fields" aria-label="Campos">
           <li>
             <fieldset>
               <legend class="title">Aficiones</legend>
@@ -125,7 +125,7 @@
                   <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
           </li>
         </ul>
-        <div role="group" aria-label="buttons">
+        <div role="group" aria-label="Botones">
           <input class="btn" type="reset" value="Reiniciar">
           <button class="btn">Enviar</button>
         </div>
