@@ -6,6 +6,8 @@ Intentar replicar la captura a partir de la siguiente imagen
 
 También tienes la [versión móvil](./assets/screenshoot-mobil.png)
 
+El fichero __index.html__ tiene el __HTML__ que te hace falta. También tienes la fuente en la carpeta __fonts__.
+
 ## Font
 
 - Cargar la fuente Abel Regular de la carpeta fonts
