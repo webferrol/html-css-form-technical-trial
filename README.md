@@ -2,6 +2,10 @@
 
 Intentar replicar la captura a partir de la siguiente imagen
 
+![Landpage](./assets/screenshoot.png)
+
+También tienes la [versión móvil](./assets/screenshoot-mobil.png)
+
 ## Font
 
 - Cargar la fuente Abel Regular de la carpeta fonts
