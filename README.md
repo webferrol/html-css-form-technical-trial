@@ -2,6 +2,10 @@
 
 ![Super formulario](/assets/screenshoot.png)
 
+## El logo
+
+[Enlace al logo](/images/logo.jpg)
+
 ## Tipo de controles de formulario de elementos input
 
 - text: 
