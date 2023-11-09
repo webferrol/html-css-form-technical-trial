@@ -1,34 +1,25 @@
-# Crea un HTML semántico del siguiente formulario
+# Parte CSS del formulario
 
-![Super formulario](/assets/screenshoot.png)
+Intentar replicar la captura a partir de la siguiente imagen
 
-## El logo
+## Font
 
-[Enlace al logo](/images/logo.jpg)
+- Cargar la fuente Abel Regular de la carpeta fonts
 
-## Tipo de controles de formulario de elementos input
+## General
 
-- text: 
-  Nombre, apellidos, 
-- radio:
-  Carnet de Conducir
-- number
-  Edad (entre 0 y 120)
-- tel
-  Teléfono
-- email
-  Correo electrónico
-- checkbox
-  Programación (chequeado), Diseño Web, Bases de datos, Gestor de contenidos, analista programador
-- file
-  Foto de perfil
-- date
-  Fecha e nacimiento
+- Limpiar las listas (quitar rellenos, viñetas y enumeraciones)
 
-## Otros contoles de formulario
-- Selector
-  A Coruña, Lugo, Ourense, Pontevedra
-- Área de texto
-  Comentarios
+## container
 
-## Valida el Formulario y comprueba con la herramienta devtools su accesibilidad
+- Centrar el elemento en horizontal
+- Máximo de anchura 1200px
+
+## La cabecera (main-header)
+
+- Utilizar __display: flex__
+- Tamaño de la imagen de _2rem_
+
+## La clase main-content
+
+- Display también en flex

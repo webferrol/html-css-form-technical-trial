@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super formulario</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="body">
+  <div class="container">
+    <header class="main-header">
+      <h1 class="main-title title">Super formulario</h1>
+      <img class="logo" src="/images/logo.jpg" width="150" height="150" alt="Super formulario">
+    </header>
+    <form class="main-content">
+      <section class="card" role="group" aria-label="Personales">
+        <header>
+          <h2 class="title">Datos personales</h2>
+          <p id="asterisco" class="asterisco">Los campos con asterisco (*) son obligatorios</p>
+        </header>
+        <ul class="fields">
+          <li>
+            <label for="name">Nombre <span class="asterisco">*</span></label>
+            <input autocomplete="on" autofocus id="name" name="name" type="text" required placeholder="p.e. Pepito" aria-describedby="asterisco">
+          </li>
+          <li>
+            <label for="last-name">Apellidos <span class="asterisco">*</span></label>
+            <input id="last-name" name="last-name" type="text" required placeholder="p.e. De Los Palotes"
+            aria-describedby="asterisco">
+          </li>
+          <li>
+            <label for="nac">Fecha de nacimiento</label>
+            <input type="date" id="nac" name="nacimiento">
+          </li>
+          <li>
+            <label for="province">Provincia</label>
+            <select name="province" id="province">
+              <option value="c">
+                A Coruña
+              </option>
+              <option value="l">Lugo</option>
+              <option value="o">Ourense</option>
+              <option value="p">Pontevedra</option>
+            </select>
+          </li>
+          <li>
+            <label for="age">Edad</label>
+            <input min="0" max="120" id="age" name="age" type="number" placeholder="p.e. 50">
+          </li>
+          <li>
+            <label for="tel">Teléfono</label>
+            <input autocomplete="mobile" id="tel" name="tel" type="tel" placeholder="p.e. 655908367">
+          </li>
+          <li>
+            <fieldset>
+              <legend class="title">Carnet B</legend>
+              <label>
+                <input type="radio" name="carnet-b" value="si" checked> Sí
+              </label>
+              <label>
+                <input type="radio" name="carnet-b" value="si" checked> No
+              </label>
+            </fieldset>
+          </li>
+        </ul>
+      </section>
+      <section class="card" role="group" aria-label="Cuenta">
+        <header>
+          <h2 class="title">Datos de la cuenta</h2>
+        </header>
+        <ul class="fields">
+          <li>
+            <label for="email">Correo electrónico</label>
+            <input autocomplete="email" id="email" name="email" type="email" placeholder="p.e. info@webferrol.com">
+          </li>
+          <li>
+            <label for="web">Sitio Web</label>
+            <input id="web" name="url" type="url" placeholder="p.e. https://www.webferrol.com">
+          </li>
+          <li>
+            <label for="foto">
+              Foto de perfil
+            </label>
+            <input type="file" id="foto" name="foto">
+          </li>
+        </ul>
+      </section>
+      <section class="card" role="group" aria-label="otros">
+        <h2 class="title">Otros datos</h2>
+        <ul class="fields">
+          <li>
+            <fieldset>
+              <legend class="title">Aficiones</legend>
+              <ol>
+                <li>
+                  <label>
+                    <input checked type="checkbox" name="programacion">Programación
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="diseño-web">Diseño Web
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="bbdd">Bases de datos
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="gestor-contenidos">Gestor de contenidos
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input id="myCheck" type="checkbox" name="analista">Analista programador
+                  </label>
+                </li>
+              </ol>
+            </fieldset>
+          </li>
+          <li>
+            <label for="comment">Comentarios</label>
+                  <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          </li>
+        </ul>
+        <div role="group" aria-label="buttons">
+          <input class="btn" type="reset" value="Reiniciar">
+          <button class="btn">Enviar</button>
+        </div>
+      </section>
+    </form>
+  </div>
+  <script>
+    document.getElementById("myCheck").indeterminate = true;
+  </script>
+</body>
+</html>
